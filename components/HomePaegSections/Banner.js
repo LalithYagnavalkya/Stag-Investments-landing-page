@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import styles from "../../styles/HomePageStyles/Banner.module.css";
 // import { ReactComponent as RightArrow } from "../../assests/arrow-right.svg";
@@ -30,7 +29,7 @@ const Banner = ({ headlines, myBackground }) => {
       <div className={styles.btnrow} id="lookatprice">
         <span>
           Look at our pricing
-          <Image src="/icons/arrow-right.svg" alt="stag investments pricing" />
+          <img src="/icons/arrow-right.svg" alt="stag investments pricing" />
         </span>
         {/* <RightArrow /> */}
       </div>

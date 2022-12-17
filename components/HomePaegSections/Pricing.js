@@ -1,4 +1,3 @@
-/* eslint react/no-unescaped-entities */
 import React from "react";
 import styles from "../../styles/HomePageStyles/Pricing.module.css";
 const prices = [
@@ -65,7 +64,9 @@ const Pricing = ({ togglePricingPage }) => {
                     <span>{item.name}</span>
                   </div>
                   <div className={styles.desc}>
-                    <span className={styles.subtitle}>What You'll Get</span>
+                    <span className={styles.subtitle}>
+                      What You&apos;ll Get
+                    </span>
                     {item.perks.map((perks) => {
                       return (
                         <>
