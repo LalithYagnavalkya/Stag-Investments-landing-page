@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 const About = () => {
   const myLine = useRef();
   const { scrollYProgress } = useScroll();
-  const x = useTransform(scrollYProgress, [0, 1], [350, -150]);
+  const x = useTransform(scrollYProgress, [0, 1], [220, -150]);
 
   useEffect(() => {
     gsap.fromTo(

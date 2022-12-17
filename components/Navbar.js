@@ -22,10 +22,11 @@ const Navbar = ({ togglePricingPage }) => {
             <div className={styles.navSettingItems}>
               <Link
                 className="contact-btn"
-                // href="#what-we-do-container-section"
-                href=""
+                href="#what-we-do-container-section"
+                // href=""
                 // spy={true}
                 // smooth={true}
+                scroll={false}
                 // offset={-100}
                 // duration={500}
               >
@@ -48,13 +49,13 @@ const Navbar = ({ togglePricingPage }) => {
                 pricing
               </span>
               <Link
-                href=""
+                href="#contact-section"
                 className="contact-btn"
-                // to="contact-section-page"
-                // spy={true}
-                // smooth={true}
-                // offset={-100}
-                // duration={500}
+                //   to="contact-section-page"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
               >
                 <span onClick={() => toggleNav(false)}>contact us</span>
               </Link>
@@ -65,23 +66,24 @@ const Navbar = ({ togglePricingPage }) => {
       <div className={styles.navlinks}>
         <Link
           className="contact-btn"
-          href=""
+          href="#what-we-do-container-section"
           //   to="what-we-do-container-section"
-          //   spy={true}
-          //   smooth={true}
-          //   offset={-100}
-          //   duration={500}
+          spy={true}
+          smooth={true}
+          scroll={true}
+          // offset={-100}
+          duration={500}
         >
           <span className="contact-btn">About</span>
         </Link>
         <Link
-          href=""
+          href="#contact-section"
           className="contact-btn"
           //   to="contact-section-page"
-          //   spy={true}
-          //   smooth={true}
-          //   offset={-100}
-          //   duration={500}
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
         >
           <span>Contact us</span>
         </Link>
