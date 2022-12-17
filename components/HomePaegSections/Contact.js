@@ -2,8 +2,10 @@ import React, { useEffect, useRef } from "react";
 import styles from "../../styles/HomePageStyles/Contact.module.css";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import gsap from "gsap";
+import { useForm, ValidationError } from "@formspree/react";
 gsap.registerPlugin(ScrollTrigger);
 const Contact = () => {
+  const [state, handleSubmit] = useForm("xqkozelq");
   const myLine = useRef();
   useEffect(() => {
     gsap.fromTo(
@@ -56,41 +58,56 @@ const Contact = () => {
       </div>
       <div className={styles.container}>
         <div className={styles.heading}>Get in Touch</div>
-        <div className={styles.row}>
-          <div className={styles.feild}>
-            <div className={styles.feildtitle}>Your name</div>
-            <div className={styles.feildinput}>
-              <input type="text" />
+        <form
+          action="https://formspree.io/f/xqkozelq"
+          method="post"
+          onSubmit={handleSubmit}
+        >
+          <div className={styles.row}>
+            <div className={styles.feild}>
+              <div className={styles.feildtitle}>Your name</div>
+              <div className={styles.feildinput}>
+                <input type="text" id="name" name="name" />
+              </div>
+            </div>
+            <div className={styles.feild}>
+              <div className={styles.feildtitle}>Your number</div>
+              <div className={styles.feildinput}>
+                <input type="text" id="number" name="number" />
+              </div>
             </div>
           </div>
-          <div className={styles.feild}>
-            <div className={styles.feildtitle}>Your number</div>
-            <div className={styles.feildinput}>
-              <input type="text" />
+          <div className={styles.row}>
+            <div className={styles.feild}>
+              <div className={styles.feildtitle}>Your email</div>
+              <div className={styles.feildinput}>
+                <input autoComplete="on" id="email" type="email" name="email" />
+              </div>
+            </div>
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
+            />
+          </div>
+          <div className={styles.row}>
+            <div className={styles.messagefeild}>
+              <div className={styles.feildtitle}>Your Message</div>
+              <div className={styles.messagefeildinput}>
+                <textarea id="message" name="message" type="text" />
+              </div>
             </div>
           </div>
-        </div>
-        <div className={styles.row}>
-          <div className={styles.feild}>
-            <div className={styles.feildtitle}>Your email</div>
-            <div className={styles.feildinput}>
-              <input type="text" />
-            </div>
+          <div className={styles.row2}>
+            <button
+              type="submit"
+              disabled={state.submitting}
+              className={styles.submitbtn}
+            >
+              <span>Just send</span>
+            </button>
           </div>
-        </div>
-        <div className={styles.row}>
-          <div className={styles.messagefeild}>
-            <div className={styles.feildtitle}>Your Message</div>
-            <div className={styles.messagefeildinput}>
-              <textarea type="text" />
-            </div>
-          </div>
-        </div>
-        <div className={styles.row2}>
-          <div className={styles.submitbtn}>
-            <span>Just send</span>
-          </div>
-        </div>
+        </form>
       </div>
     </div>
   );
