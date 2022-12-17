@@ -1,6 +1,6 @@
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
-import styles from "../../styles/HomepageStyles/Work.module.css";
+import styles from "../../styles/Work.module.css";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 const Work = () => {
