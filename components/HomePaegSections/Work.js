@@ -51,7 +51,7 @@ const Work = () => {
         ease: "power4.out",
         y: 0,
         skewY: 0,
-        delay: 1.2,
+        delay: 0.6,
         stagger: 0.1,
         scrollTrigger: {
           trigger: "#Work-section",

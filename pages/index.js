@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import {
   About,
   Banner,
+  Contact,
   IntroOverlay,
   Location,
   Risk,
@@ -93,6 +94,7 @@ export default function Home() {
       <Risk />
       <Work />
       <Location />
+      <Contact />
       <Social />
     </div>
   );
