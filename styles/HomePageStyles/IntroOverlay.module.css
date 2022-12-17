@@ -36,3 +36,14 @@
 .overlaytop:nth-child(3) {
   left: 66.333%;
 }
+@media (max-width: 768px) {
+  .overlaytop {
+    width: 100vw;
+  }
+  .overlaytop:nth-child(2) {
+    display: none;
+  }
+  .overlaytop:nth-child(3) {
+    display: none;
+  }
+}

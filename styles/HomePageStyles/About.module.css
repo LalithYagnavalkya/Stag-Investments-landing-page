@@ -65,7 +65,7 @@
     font-size: 32px;
   }
   .smalltext {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 @media (max-width: 425px) {
@@ -75,12 +75,17 @@
   .row {
     flex-direction: column;
   }
+  .slidetext {
+    font-size: 11vw;
+  }
 }
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   .main {
     padding: 0 1rem;
   }
-
+  .slidetext {
+    font-size: 10vw;
+  }
   .bigtext {
     font-size: 24px;
   }

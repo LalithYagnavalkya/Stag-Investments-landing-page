@@ -1,0 +1,122 @@
+.main {
+  padding: 0 0rem;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 4rem;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  column-gap: 2rem;
+}
+.videocontainer {
+  overflow: hidden;
+  width: 100%;
+  flex: 0.8;
+}
+.videocontainer video {
+  object-fit: cover;
+  width: 100% !important;
+  height: auto !important;
+}
+.videocontainer2 {
+  overflow: hidden;
+  flex: 0.5;
+  height: 80vh;
+  width: 100%;
+}
+.videocontainer2 video {
+  object-fit: cover;
+  width: 90% !important;
+  height: 100% !important;
+}
+.content {
+  flex: 0.65;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 2rem;
+}
+.contentheading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 60px;
+  color: var(--text-color);
+}
+.contentheading2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 60px;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sentence {
+  overflow: hidden;
+  margin-bottom: 8px;
+  height: 56px;
+  position: relative;
+}
+.desc {
+  /* width: 570px;/ */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 171%;
+  color: #757575;
+}
+@media (max-width: 1024px) {
+  .main {
+    padding: 0 2rem;
+  }
+  .videocontainer {
+    display: none;
+  }
+  .videocontainer2 {
+    display: none;
+  }
+  .row {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .contentheading2 {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .contentheading {
+    font-size: 32px;
+  }
+  .contentheading2 {
+    font-size: 32px;
+  }
+  .desc {
+    font-size: 18px;
+  }
+}
+@media (max-width: 425px) {
+  .main {
+    padding: 0 1rem;
+  }
+  .contentheading {
+    font-size: 24px;
+  }
+  .content {
+    flex: 1;
+  }
+  .contentheading2 {
+    width: 100%;
+    font-size: 24px;
+  }
+  .desc {
+    font-size: 18px;
+  }
+}

@@ -1,7 +1,6 @@
 import { useEffect, useRef } from "react";
 import { useScroll, useTransform, motion } from "framer-motion";
 import styles from "../../styles/HomePageStyles/About.module.css";
-import HorizontalLine from "../HorizontalLine";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -9,6 +8,7 @@ const About = () => {
   const myLine = useRef();
   const { scrollYProgress } = useScroll();
   const x = useTransform(scrollYProgress, [0, 1], [350, -150]);
+
   useEffect(() => {
     gsap.fromTo(
       "#sentence div",
@@ -23,7 +23,40 @@ const About = () => {
         skewY: 0,
         stagger: 0.1,
         scrollTrigger: {
-          trigger: ".sentence",
+          trigger: "#sentence",
+          toggleActions: "restart none none none",
+          // end: "bottom 10%",
+        },
+      }
+    );
+  }, []);
+
+  //useEffect for horiline
+  useEffect(() => {
+    gsap.fromTo(
+      myLine.current,
+      { x: "-200%" },
+      {
+        x: 0,
+        ease: "circ.easeIn",
+        duration: 0.8,
+        scrollTrigger: {
+          trigger: "#what-we-do-container-section",
+          toggleActions: "restart none none none",
+          // end: "bottom 10%",
+        },
+      }
+    );
+    gsap.fromTo(
+      "#line-subtext",
+      { opacity: 0, y: 300 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: `#what-we-do-container-section`,
           toggleActions: "restart none none none",
           // end: "bottom 10%",
         },
@@ -33,7 +66,25 @@ const About = () => {
 
   return (
     <section className={styles.main} id="what-we-do-container-section">
-      <HorizontalLine Heading={"What we do?"} pageNo="1" />
+      {/* <HorizontalLine
+        reftag={"what-we-do-container-section"}
+        Heading={"What we do?"}
+        pageNo="1"
+      /> */}
+      <div className="HoriContainer">
+        <hr ref={myLine} />
+        <div className="Horilinecontent">
+          <span className="Horipagename" id="line-subtext">
+            What We Do?
+          </span>
+          <span className="Horinum" id="line-subtext">
+            01
+          </span>
+          <span className="Horinum" id="line-subtext">
+            /03
+          </span>
+        </div>
+      </div>
       <div className={styles.row}>
         <div className={styles.bigtext}>
           <div className={styles.sentence} id="sentence">

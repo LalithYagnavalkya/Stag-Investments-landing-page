@@ -6,9 +6,11 @@ import {
   About,
   Banner,
   IntroOverlay,
+  Location,
   Risk,
   Social,
   Strategies,
+  Work,
 } from "../components/HomePaegSections";
 import styles from "../styles/Home.module.css";
 
@@ -89,6 +91,8 @@ export default function Home() {
       <About />
       <Strategies />
       <Risk />
+      <Work />
+      <Location />
       <Social />
     </div>
   );

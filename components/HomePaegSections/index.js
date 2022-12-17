@@ -4,4 +4,17 @@ import Social from "./Social";
 import About from "./About";
 import Strategies from "./Strategies";
 import Risk from "./Risk";
-export { Risk, Strategies, About, Banner, IntroOverlay, Social };
+import Work from "./Work";
+import Location from "./Location";
+import Contact from "./Contact";
+export {
+  Contact,
+  Location,
+  Work,
+  Risk,
+  Strategies,
+  About,
+  Banner,
+  IntroOverlay,
+  Social,
+};

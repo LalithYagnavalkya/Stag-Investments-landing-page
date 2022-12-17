@@ -22,6 +22,34 @@ a {
 * {
   box-sizing: border-box;
 }
+.HoriContainer {
+  width: 100%;
+  overflow: hidden;
+}
+.HoriContainer hr {
+  border: 1px solid rgb(255, 255, 255);
+  margin-bottom: 1.5rem;
+}
+.Horilinecontent {
+  display: flex;
+  justify-content: space-between;
+}
+.Horipagename {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.Horinum {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #a0a0a0;
+}
 
 @media (prefers-color-scheme: dark) {
   html {
