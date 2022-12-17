@@ -1,0 +1,200 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 10rem;
+  padding-top: 5rem;
+  overflow: hidden;
+}
+.header img {
+  cursor: pointer;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  column-gap: 2.5rem;
+  justify-content: center;
+  padding-top: 5rem;
+  align-items: flex-start;
+}
+
+.pricecard {
+  width: calc(400px - 40px);
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  min-height: calc(668px - 40px);
+  border-radius: 20px;
+  padding: 32px;
+  align-items: center;
+  background: #012f3e;
+  font-family: "inter";
+  overflow: hidden;
+  position: relative;
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+.title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  justify-self: flex-start;
+  column-gap: 0.7rem;
+}
+.subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  color: #b7aaaa;
+}
+.point {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  font-weight: 300;
+}
+.desc {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  /* justify-content: center; */
+  border-bottom: 1px dashed #ffffff;
+  padding-bottom: 2rem;
+}
+.amountsection {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  height: 100%;
+  width: 100%;
+  flex: 1;
+  row-gap: 1rem;
+}
+.amount {
+  color: #b7aaaa;
+  height: 100%;
+  flex: 1;
+  height: 100%;
+}
+.amount span {
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 32px;
+  line-height: 40px;
+}
+.pricingbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  background-color: #30cbff;
+  background: #d7d7d7;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 22px;
+  transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  cursor: pointer;
+  color: #012f3e;
+}
+.pricingbtn:hover {
+  background: rgb(226, 138, 6);
+  transform: scale(1.009);
+  font-weight: 600;
+  color: black;
+}
+.pricingshow {
+  width: calc(400px - 40px);
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  min-height: calc(668px - 40px);
+  border-radius: 20px;
+  padding: 32px;
+  align-items: center;
+  background: #012f3e;
+  overflow: hidden;
+  overflow: hidden;
+  position: relative;
+  font-family: "inter";
+}
+.pricingshowtitle {
+  font-weight: 300;
+  font-size: 32px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.pricingshowtitle span {
+  font-weight: 700;
+}
+.pricingshowdesc {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  width: 100%;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+}
+.priceshowlogo {
+  position: absolute;
+  bottom: -15%;
+}
+.priceshowlogo img {
+  height: 430px;
+}
+@media (max-width: 1024px) {
+  .main {
+    padding: 0 2rem;
+    padding-top: 4rem;
+  }
+  .container {
+    column-gap: 0.8rem;
+  }
+  .title {
+    /* font-size: 24px; */
+  }
+  .subtitle {
+    /* font-size: 18px; */
+  }
+  .point {
+  }
+}
+@media (max-width: 768px) {
+  .main {
+    padding: 4rem 2rem;
+  }
+  .container {
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+    flex-direction: column;
+  }
+}
+@media (max-width: 375px) {
+  .main {
+    padding: 4rem 1rem;
+  }
+  .pricecard {
+    width: calc(320px - 40px);
+    padding: 24px;
+  }
+  .pricingshow {
+    width: calc(320px - 40px);
+    padding: 24px;
+  }
+}

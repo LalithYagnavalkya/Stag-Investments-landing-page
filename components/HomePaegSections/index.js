@@ -7,7 +7,9 @@ import Risk from "./Risk";
 import Work from "./Work";
 import Location from "./Location";
 import Contact from "./Contact";
+import Pricing from "./Pricing";
 export {
+  Pricing,
   Contact,
   Location,
   Work,

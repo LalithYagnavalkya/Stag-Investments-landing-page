@@ -18,6 +18,19 @@
     flex-direction: column;
   }
 }
+.pricingpage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--main-bg-color);
+  height: 100vh;
+  width: 100%;
+  z-index: 15;
+  overflow: scroll;
+}
+.pricingpage::-webkit-scrollbar {
+  display: none;
+}
 
 @media (prefers-color-scheme: dark) {
   .card,

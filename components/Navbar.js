@@ -2,8 +2,7 @@ import Link from "next/link";
 import { useState } from "react";
 import styles from "../styles/Navbar.module.css";
 
-const Navbar = () => {
-  const togglePricingPage = () => {};
+const Navbar = ({ togglePricingPage }) => {
   const [isNav, toggleNav] = useState(false);
   return (
     <div className={styles.navbar} id="header">

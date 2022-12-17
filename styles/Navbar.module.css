@@ -4,6 +4,7 @@
   height: 90px;
   z-index: 12;
   backdrop-filter: blur(10px);
+  background-color: rgba(17, 17, 17, 0.7);
   font-family: "Josefin sans";
   padding: 0rem 4rem;
   padding-top: 2rem;

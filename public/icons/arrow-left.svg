@@ -1,1 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_42_68)">
+<path d="M13.0465 21.666L21.9865 30.606L19.6299 32.9626L6.66652 19.9993L19.6299 7.03598L21.9865 9.39264L13.0465 18.3326H33.3332V21.666H13.0465Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_42_68">
+<rect width="40" height="40" fill="white" transform="translate(39.9999 39.9995) rotate(-180)"/>
+</clipPath>
+</defs>
+</svg>

@@ -1,13 +1,14 @@
 import gsap, { Power2 } from "gsap";
 import Head from "next/head";
 import Image from "next/image";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import {
   About,
   Banner,
   Contact,
   IntroOverlay,
   Location,
+  Pricing,
   Risk,
   Social,
   Strategies,
@@ -15,7 +16,7 @@ import {
 } from "../components/HomePaegSections";
 import styles from "../styles/Home.module.css";
 
-export default function Home() {
+export default function Home({ togglePricingPage, isPricingPageOpen }) {
   useEffect(() => {
     const tl = gsap.timeline();
     gsap.to("body", { css: { visibility: "visible" }, duration: 0 });
@@ -95,6 +96,11 @@ export default function Home() {
       <Work />
       <Location />
       <Contact />
+      {isPricingPageOpen && (
+        <div className={styles.pricingpage}>
+          <Pricing togglePricingPage={togglePricingPage} />
+        </div>
+      )}
       <Social />
     </div>
   );
