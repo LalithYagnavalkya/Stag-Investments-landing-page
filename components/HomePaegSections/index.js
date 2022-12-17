@@ -8,7 +8,9 @@ import Work from "./Work";
 import Location from "./Location";
 import Contact from "./Contact";
 import Pricing from "./Pricing";
+import Sebi from "./Sebi";
 export {
+  Sebi,
   Pricing,
   Contact,
   Location,

@@ -10,6 +10,7 @@ import {
   Location,
   Pricing,
   Risk,
+  Sebi,
   Social,
   Strategies,
   Work,
@@ -96,6 +97,7 @@ export default function Home({ togglePricingPage, isPricingPageOpen }) {
       <Work />
       <Location />
       <Contact />
+      <Sebi />
       {isPricingPageOpen && (
         <div className={styles.pricingpage}>
           <Pricing togglePricingPage={togglePricingPage} />
