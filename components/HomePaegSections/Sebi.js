@@ -1,5 +1,5 @@
 const Sebi = () => {
-  return <div>We are not SEBI registered yet*</div>;
+  return <div className="sebi">We are not SEBI registered yet*</div>;
 };
 
 export default Sebi;
