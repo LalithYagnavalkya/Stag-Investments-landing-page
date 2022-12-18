@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../../styles/HomePageStyles/Banner.module.css";
 // import { ReactComponent as RightArrow } from "../../assests/arrow-right.svg";
-const Banner = ({ headlines, myBackground }) => {
+const Banner = ({ headlines, togglePricingPage }) => {
   return (
     <div className={styles.main}>
       <div className={styles.heading}>
@@ -29,7 +29,11 @@ const Banner = ({ headlines, myBackground }) => {
       <div className={styles.btnrow} id="lookatprice">
         <span>
           Look at our pricing
-          <img src="/icons/arrow-right.svg" alt="stag investments pricing" />
+          <img
+            src="/icons/arrow-right.svg"
+            alt="stag investments pricing"
+            onClick={() => togglePricingPage(true)}
+          />
         </span>
         {/* <RightArrow /> */}
       </div>

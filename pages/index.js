@@ -90,7 +90,7 @@ export default function Home({ togglePricingPage, isPricingPageOpen }) {
         <link rel="icon" href="/logo.svg" />
       </Head>
       <IntroOverlay />
-      <Banner />
+      <Banner togglePricingPage={togglePricingPage} />
       <About />
       <Strategies />
       <Risk />
