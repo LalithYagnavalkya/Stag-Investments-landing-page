@@ -7,6 +7,7 @@ import { useInView } from "react-intersection-observer";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 Chart.register(ArcElement, Tooltip, Legend);
+
 const Strategies = () => {
   const { ref, inView, entry } = useInView({
     /* Optional options */

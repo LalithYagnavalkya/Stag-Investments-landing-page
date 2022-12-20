@@ -6,7 +6,6 @@ const Layout = ({ children, togglePricingPage }) => {
     <div className="content">
       <Navbar togglePricingPage={togglePricingPage} />
       {children}
-
       <Footer />
     </div>
   );
