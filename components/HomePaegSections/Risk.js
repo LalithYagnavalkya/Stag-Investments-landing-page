@@ -36,9 +36,9 @@ const Risk = () => {
             autoPlay
             loop
             muted
-            resizeMode="cover"
-            repeat={true}
-            playWhenInactive={true}
+            resizemode="cover"
+            repeat={"true"}
+            playwheninactive={"true"}
           />
         </div>
         <div className={styles.content}>
@@ -78,9 +78,9 @@ const Risk = () => {
             autoPlay
             loop
             muted
-            resizeMode="cover"
-            repeat={true}
-            playWhenInactive={true}
+            resizemode="cover"
+            repeat={"true"}
+            playwheninactive={"true"}
           />
         </div>
       </div>

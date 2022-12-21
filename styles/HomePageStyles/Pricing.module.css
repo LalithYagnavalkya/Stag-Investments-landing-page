@@ -3,7 +3,7 @@
   flex-direction: column;
   margin: 0 auto;
   padding: 0 10rem;
-  padding-top: 5rem;
+  padding-top: 4rem;
   overflow: hidden;
 }
 .header img {
@@ -160,7 +160,7 @@
 @media (max-width: 1024px) {
   .main {
     padding: 0 2rem;
-    padding-top: 4rem;
+    padding-top: 2rem;
   }
   .container {
     column-gap: 0.8rem;
@@ -176,7 +176,7 @@
 }
 @media (max-width: 768px) {
   .main {
-    padding: 4rem 2rem;
+    padding: 4rem 1rem;
   }
   .container {
     justify-content: center;

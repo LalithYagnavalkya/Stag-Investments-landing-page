@@ -4,6 +4,7 @@ import styles from "../styles/Navbar.module.css";
 
 const Navbar = ({ togglePricingPage }) => {
   const [isNav, toggleNav] = useState(false);
+
   return (
     <div className={styles.navbar} id="header">
       <div className={styles.logo}>

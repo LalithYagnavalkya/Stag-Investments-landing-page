@@ -105,9 +105,7 @@ const Strategies = () => {
     // responsive: true,
     // maintainAspectRatio: true,
   };
-  useEffect(() => {
-    console.log(inView);
-  }, [inView]);
+
   return (
     <div
       className={styles.main}
