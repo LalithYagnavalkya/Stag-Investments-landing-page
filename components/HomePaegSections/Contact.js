@@ -46,7 +46,7 @@ const Contact = ({ notify }) => {
       document.getElementById("email").value = "";
       document.getElementById("message").value = "";
     }
-  });
+  }, [state]);
   return (
     <div className={styles.main} id="contact-section">
       <div className="HoriContainer">
