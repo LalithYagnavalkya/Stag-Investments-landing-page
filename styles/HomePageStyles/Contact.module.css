@@ -106,7 +106,7 @@
 
 @media (max-width: 425px) {
   .main {
-    padding: 0 0rem;
+    padding: 0 1rem;
   }
   .row {
     flex-direction: column;
