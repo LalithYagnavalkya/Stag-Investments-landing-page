@@ -93,6 +93,7 @@ export default function Home() {
           name="description"
           content="stag investments is a trading comapnay"
         />
+            <meta name="google-site-verification" content="2iPgzwPuC8VGeftMGa67ySHKZ26E81ZJ0ctuDKl1R5g" />
         <link rel="icon" href="/logo.svg" />
       </Head>
       <Navbar togglePricingPage={togglePricingPage} />
