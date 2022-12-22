@@ -4,7 +4,7 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import gsap from "gsap";
 import { useForm, ValidationError } from "@formspree/react";
 gsap.registerPlugin(ScrollTrigger);
-const Contact = () => {
+const Contact = ({ notify }) => {
   const [state, handleSubmit] = useForm("xyyageby");
   const myLine = useRef();
   useEffect(() => {
@@ -38,7 +38,15 @@ const Contact = () => {
       }
     );
   }, []);
-
+  useEffect(() => {
+    if (state.succeeded) {
+      notify();
+      document.getElementById("name").value = "";
+      document.getElementById("number").vaule = "";
+      document.getElementById("email").value = "";
+      document.getElementById("message").value = "";
+    }
+  });
   return (
     <div className={styles.main} id="contact-section">
       <div className="HoriContainer">

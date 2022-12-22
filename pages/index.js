@@ -2,6 +2,8 @@ import gsap, { Power2 } from "gsap";
 import Head from "next/head";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import {
   About,
   Banner,
@@ -20,6 +22,7 @@ import styles from "../styles/Home.module.css";
 
 export default function Home() {
   const [isPricingPageOpen, togglePricingPage] = useState(false);
+  const notify = () => toast.success("Wow so easy!");
 
   useEffect(() => {
     const tl = gsap.timeline();
@@ -93,7 +96,10 @@ export default function Home() {
           name="description"
           content="stag investments is a trading comapnay"
         />
-            <meta name="google-site-verification" content="2iPgzwPuC8VGeftMGa67ySHKZ26E81ZJ0ctuDKl1R5g" />
+        <meta
+          name="google-site-verification"
+          content="2iPgzwPuC8VGeftMGa67ySHKZ26E81ZJ0ctuDKl1R5g"
+        />
         <link rel="icon" href="/logo.svg" />
       </Head>
       <Navbar togglePricingPage={togglePricingPage} />
@@ -104,13 +110,15 @@ export default function Home() {
       <Risk />
       <Work />
       <Location />
-      <Contact />
+      <Contact notify={notify} />
       <Sebi />
       {isPricingPageOpen && (
         <div className={styles.pricingpage}>
           <Pricing togglePricingPage={togglePricingPage} />
         </div>
       )}
+      <ToastContainer position="bottom-right" theme="colored" />
+
       <Social />
     </div>
   );
