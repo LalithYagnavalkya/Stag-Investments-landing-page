@@ -22,7 +22,7 @@ import styles from "../styles/Home.module.css";
 
 export default function Home() {
   const [isPricingPageOpen, togglePricingPage] = useState(false);
-  const notify = () => toast.success("Wow so easy!");
+  const notify = () => toast.success("Mail sent!");
 
   useEffect(() => {
     const tl = gsap.timeline();
