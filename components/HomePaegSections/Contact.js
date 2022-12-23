@@ -67,7 +67,7 @@ const Contact = ({ notify }) => {
       <div className={styles.container}>
         <div className={styles.heading}>Get in Touch</div>
         <form
-          action={`https://formspree.io/f/${process.env.FORMSPREE}`}
+          action={`https://formspree.io/f/${process.env.formKey}`}
           method="post"
           onSubmit={handleSubmit}
         >
