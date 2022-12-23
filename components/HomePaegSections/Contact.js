@@ -4,8 +4,9 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import gsap from "gsap";
 import { useForm, ValidationError } from "@formspree/react";
 gsap.registerPlugin(ScrollTrigger);
+
 const Contact = ({ notify }) => {
-  const [state, handleSubmit] = useForm(`"${process.env.FORMSPREE}"`);
+  const [state, handleSubmit] = useForm(`${process.env.NEXT_PUBLIC_FORM}`);
   const myLine = useRef();
   useEffect(() => {
     gsap.fromTo(
@@ -47,6 +48,8 @@ const Contact = ({ notify }) => {
       document.getElementById("message").value = "";
     }
   }, [state]);
+  console.log(process.env.NEXT_PUBLIC_FORM);
+  console.log(`https://formspree.io/f/${process.env.NEXT_PUBLIC_FORM}`);
   return (
     <div className={styles.main} id="contact-section">
       <div className="HoriContainer">
@@ -67,7 +70,7 @@ const Contact = ({ notify }) => {
       <div className={styles.container}>
         <div className={styles.heading}>Get in Touch</div>
         <form
-          action={`https://formspree.io/f/${process.env.formKey}`}
+          action={`https://formspree.io/f/${process.env.NEXT_PUBLIC_FORM}`}
           method="post"
           onSubmit={handleSubmit}
         >
