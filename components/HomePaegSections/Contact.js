@@ -5,7 +5,7 @@ import gsap from "gsap";
 import { useForm, ValidationError } from "@formspree/react";
 gsap.registerPlugin(ScrollTrigger);
 const Contact = ({ notify }) => {
-  const [state, handleSubmit] = useForm("xyyageby");
+  const [state, handleSubmit] = useForm(`"${process.env.FORMSPREE}"`);
   const myLine = useRef();
   useEffect(() => {
     gsap.fromTo(
@@ -67,7 +67,7 @@ const Contact = ({ notify }) => {
       <div className={styles.container}>
         <div className={styles.heading}>Get in Touch</div>
         <form
-          action="https://formspree.io/f/xyyageby"
+          action={`https://formspree.io/f/${process.env.FORMSPREE}`}
           method="post"
           onSubmit={handleSubmit}
         >
