@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   env: {
-    formKey: "xyyageby",
+    formKey: "",
   },
 };
 
