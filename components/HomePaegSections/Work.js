@@ -87,14 +87,15 @@ const Work = () => {
             <div>to, learn New strategies and</div>
           </div>
           <div className={styles.sentence} id="work-sentence">
-            <div> to gain some Profits!</div>
+            <div> to gain constant Profits!</div>
           </div>
-          <div className={styles.price}>120₹/ day</div>
+          <div className={styles.price}>199₹/ day</div>
         </div>
         <div className={styles.desc}>
-          We trade Monday - Friday in café Avail and your are welcome to join us
-          during market trading sessions. and invest in best stocks along with
-          us. Trading classes are also available contact us to know more.
+          We trade Monday - Friday at café Avail and everyone is welcomed to
+          join us during market trading hours, and invest in best stocks along
+          with us. And we do provide scheduled Trading, please do contact with
+          us to know more.
         </div>
       </div>
       <div className={styles.row}>
@@ -103,7 +104,7 @@ const Work = () => {
             <div> Tired of work from home? </div>
           </div>
           <div className={styles.sentence} id="work-sentence">
-            <div> Just come to cafe and</div>
+            <div> Just come to cafe Avail and</div>
           </div>
           <div className={styles.sentence} id="work-sentence">
             <div> use it as a workplace.</div>

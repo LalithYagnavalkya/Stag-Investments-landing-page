@@ -48,7 +48,7 @@ const Risk = () => {
             Risk capital is money that can be lost without jeopardizing ones’
             financial security or lifestyle. Only risk capital should be used
             for trading and only those with sufficient risk capital should
-            consider trading.The Krypto Knight offers general trading advice
+            consider trading. We at Stag Investment offer general trading advice
             that does not take into consideration your own trading experiences,
             personal objectives and goals, financial means, or risk tolerance.
             Past performance is not necessarily indicative of future results.
@@ -59,16 +59,19 @@ const Risk = () => {
         <div className={styles.content}>
           <div className={styles.contentheading2}>
             <div className={styles.sentence} id="risk-heading-sentennce">
-              <div>We are looking for Crypto</div>
+              <div>We are looking for Experienced Analysts </div>
             </div>
             <div className={styles.sentence} id="risk-heading-sentennce">
-              <div>Analysts and Block Chain</div>
+              <div> and account handlers</div>
             </div>
             <div className={styles.sentence} id="risk-heading-sentennce">
-              <div>experts having 2 years of</div>
+              <div> who are willing to learn and earn</div>
             </div>
             <div className={styles.sentence} id="risk-heading-sentennce">
-              <div>experience.</div>
+              <div>at the same time while</div>
+            </div>
+            <div className={styles.sentence} id="risk-heading-sentennce">
+              <div> following our companies guidelines.</div>
             </div>
           </div>
         </div>
