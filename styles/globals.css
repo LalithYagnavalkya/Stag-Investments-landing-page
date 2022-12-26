@@ -78,7 +78,7 @@ a {
   bottom: 1rem;
   left: 20px;
 }
-@media (prefers-color-scheme: dark) {
+
   html {
     color-scheme: dark;
   }
@@ -100,4 +100,3 @@ a {
   .footer img {
     height: 65px;
   }
-}
