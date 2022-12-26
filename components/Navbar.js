@@ -8,7 +8,9 @@ const Navbar = ({ togglePricingPage }) => {
   return (
     <div className={styles.navbar} id="header">
       <div className={styles.logo}>
-        <img src="/logo.svg" alt="" />
+        <div className={styles.logostagborder}>
+          <img src="/logo.svg" alt="" />
+        </div>
         <span>Stag Investments.</span>
       </div>
       <div className={styles.navphone} onClick={() => toggleNav(!isNav)}>
@@ -24,12 +26,7 @@ const Navbar = ({ togglePricingPage }) => {
               <Link
                 className="contact-btn"
                 href="#what-we-do-container-section"
-                // href=""
-                // spy={true}
-                // smooth={true}
                 scroll={false}
-                // offset={-100}
-                // duration={500}
               >
                 <span
                   onClick={() => {

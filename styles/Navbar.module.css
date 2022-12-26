@@ -26,6 +26,9 @@
 .logo img {
   margin-top: -10px;
   width: 52px;
+  z-index: 10;
+}
+.logostagborder {
 }
 .logo span {
   font-size: 1.4rem;
