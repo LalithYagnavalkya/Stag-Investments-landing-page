@@ -88,31 +88,43 @@ const About = () => {
       <div className={styles.row}>
         <div className={styles.bigtext}>
           <div className={styles.sentence} id="sentence">
-            <div>We Are a Global</div>
+            <div>We are an upcoming </div>
           </div>
           <div className={styles.sentence} id="sentence">
-            <div> Crypto Trading and</div>
+            <div> Investment Firm,</div>
           </div>
           <div className={styles.sentence} id="sentence">
-            <div>Investment Firm,</div>
+            <div> Trying to help traders and</div>
           </div>
           <div className={styles.sentence} id="sentence">
-            <div> Driving Long and </div>
+            <div> investors find their edge</div>
           </div>
           <div className={styles.sentence} id="sentence">
-            <div> Short Term </div>
+            <div> in the Stock Market,</div>
           </div>
           <div className={styles.sentence} id="sentence">
-            <div> Sustainable Returns</div>
+            <div>we are constantly </div>
+          </div>
+          <div className={styles.sentence} id="sentence">
+            <div>working on </div>
+          </div>
+          <div className={styles.sentence} id="sentence">
+            <div>making investing easy </div>
+          </div>
+          <div className={styles.sentence} id="sentence">
+            <div>for both existing</div>
+          </div>
+          <div className={styles.sentence} id="sentence">
+            <div>and new investors/ traders,</div>
           </div>
         </div>
         <div className={styles.smalltext}>
           Stag Investments assists clients with multiple interactive services
           into the huge untapped market with a recipe to success. Our methods
-          have been tried and tested by major expert analysts and investors,
-          approving our successful formula with professional background
-          credibility, We are here to ensure that your financial present and
-          future are on the path to success.
+          have been tried and back tested by major expert analysts and
+          investors, approving our successful formula with professional
+          background credibility, We are here to ensure that your financial
+          present and future are on the path towards success.
         </div>
       </div>
       <motion.div className={styles.slidetext} style={{ x }}>
