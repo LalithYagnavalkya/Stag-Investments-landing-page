@@ -1,5 +1,5 @@
 .main {
-  padding: 0 0rem;
+  padding: 0 5rem;
   padding-top: 4rem;
   display: flex;
   flex-direction: column;
@@ -13,17 +13,19 @@
 .videocontainer {
   overflow: hidden;
   width: 100%;
-  flex: 0.8;
+  height: 50vh;
+  flex: 0.5;
 }
 .videocontainer video {
   object-fit: cover;
   width: 100% !important;
-  height: auto !important;
+  height: 80vh !important;
+  margin-top: -0.4rem;
 }
 .videocontainer2 {
   overflow: hidden;
   flex: 0.5;
-  height: 80vh;
+  /* height: 80vh; */
   width: 100%;
 }
 .videocontainer2 video {

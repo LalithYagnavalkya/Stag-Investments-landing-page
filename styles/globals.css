@@ -88,6 +88,11 @@ body {
   color: white;
   background: #111111;
 }
+.location {
+  padding: 0 2rem;
+  border-radius: 56px;
+  overflow: none;
+}
 
 .footer {
   display: flex;

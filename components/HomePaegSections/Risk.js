@@ -32,7 +32,7 @@ const Risk = () => {
       <div className={styles.row}>
         <div className={styles.videocontainer}>
           <video
-            src="/videos/books.mp4"
+            src="/videos/people.mp4"
             autoPlay
             loop
             muted
@@ -59,7 +59,10 @@ const Risk = () => {
         <div className={styles.content}>
           <div className={styles.contentheading2}>
             <div className={styles.sentence} id="risk-heading-sentennce">
-              <div>We are looking for Experienced Analysts </div>
+              <div>We are looking for Experienced </div>
+            </div>
+            <div className={styles.sentence} id="risk-heading-sentennce">
+              <div>Analysts</div>
             </div>
             <div className={styles.sentence} id="risk-heading-sentennce">
               <div> and account handlers</div>
@@ -77,7 +80,7 @@ const Risk = () => {
         </div>
         <div className={styles.videocontainer2}>
           <video
-            src="/videos/tree.mp4"
+            src="/videos/win.mp4"
             autoPlay
             loop
             muted

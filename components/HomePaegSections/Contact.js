@@ -76,23 +76,39 @@ const Contact = ({ notify }) => {
         >
           <div className={styles.row}>
             <div className={styles.feild}>
-              <div className={styles.feildtitle}>Your name</div>
+              {/* <div className={styles.feildtitle}>Your name</div> */}
               <div className={styles.feildinput}>
-                <input type="text" id="name" name="name" />
+                <input
+                  placeholder="Your name"
+                  type="text"
+                  id="name"
+                  name="name"
+                />
               </div>
             </div>
             <div className={styles.feild}>
-              <div className={styles.feildtitle}>Your number</div>
+              {/* <div className={styles.feildtitle}>Your number</div> */}
               <div className={styles.feildinput}>
-                <input type="text" id="number" name="number" />
+                <input
+                  placeholder="Your number"
+                  type="text"
+                  id="number"
+                  name="number"
+                />
               </div>
             </div>
           </div>
           <div className={styles.row}>
             <div className={styles.feild}>
-              <div className={styles.feildtitle}>Your email</div>
+              {/* <div className={styles.feildtitle}>Your email</div> */}
               <div className={styles.feildinput}>
-                <input autoComplete="on" id="email" type="email" name="email" />
+                <input
+                  placeholder="Your email"
+                  autoComplete="on"
+                  id="email"
+                  type="email"
+                  name="email"
+                />
               </div>
             </div>
             <ValidationError
@@ -103,9 +119,14 @@ const Contact = ({ notify }) => {
           </div>
           <div className={styles.row}>
             <div className={styles.messagefeild}>
-              <div className={styles.feildtitle}>Your Message</div>
+              {/* <div className={styles.feildtitle}>Your Message</div> */}
               <div className={styles.messagefeildinput}>
-                <textarea id="message" name="message" type="text" />
+                <textarea
+                  placeholder="your Message"
+                  id="message"
+                  name="message"
+                  type="text"
+                />
               </div>
             </div>
           </div>
