@@ -81,7 +81,7 @@ const About = () => {
             01
           </span>
           <span className="Horinum" id="line-subtext">
-            /03
+            /04
           </span>
         </div>
       </div>

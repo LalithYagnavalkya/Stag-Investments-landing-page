@@ -110,15 +110,10 @@ export default function Home() {
       <Risk />
       <Work />
       <Location />
+      <Pricing togglePricingPage={togglePricingPage} />
       <Contact notify={notify} />
       <Sebi />
-      {isPricingPageOpen && (
-        <div className={styles.pricingpage}>
-          <Pricing togglePricingPage={togglePricingPage} />
-        </div>
-      )}
       <ToastContainer position="bottom-right" theme="colored" />
-
       <Social />
     </div>
   );

@@ -3,6 +3,7 @@
 }
 .app::-webkit-scrollbar {
   width: 0.3em;
+  display: none;
 }
 .main {
   min-height: 100vh;
@@ -30,22 +31,7 @@
   z-index: 15;
   overflow: scroll;
 }
-.pricingpage::-webkit-scrollbar {
-  display: none;
-}
 
-@media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
-  }
-  .code {
-    background: #111;
-  }
-  .logo img {
-    filter: invert(1);
-  }
-}
 @media (max-width: 768px) {
   .container {
     padding: 0 1rem;
