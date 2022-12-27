@@ -1,5 +1,8 @@
-import React from "react";
+import gsap from "gsap";
+import React, { useEffect, useRef } from "react";
 import styles from "../../styles/HomePageStyles/Pricing.module.css";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 const prices = [
   {
     name: "6 months",
@@ -29,12 +32,58 @@ const prices = [
   },
 ];
 const Pricing = ({ togglePricingPage }) => {
+  const myLine = useRef();
+  useEffect(() => {
+    gsap.fromTo(
+      myLine.current,
+      { x: "-200%" },
+      {
+        x: 0,
+        ease: "circ.easeIn",
+        duration: 0.8,
+        scrollTrigger: {
+          trigger: "#what-we-do-container-section",
+          toggleActions: "restart none none none",
+          // end: "bottom 10%",
+        },
+      }
+    );
+    gsap.fromTo(
+      "#line-subtext",
+      { opacity: 0, y: 300 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: `#what-we-do-container-section`,
+          toggleActions: "restart none none none",
+          // end: "bottom 10%",
+        },
+      }
+    );
+  }, []);
   return (
-    <div className={styles.main}>
+    <div className={styles.main} id="pricingpagesection">
       <div className={styles.header}>
         <span onClick={() => togglePricingPage(false)}>
-          <img src="/icons/arrow-left.svg" alt="" />
+          {/* <img src="/icons/arrow-left.svg" alt="" /> */}
         </span>
+      </div>
+      <div className="HoriContainer">
+        <hr ref={myLine} />
+        <div className="Horilinecontent">
+          <span className="Horipagename" id="line-subtext">
+            Pricing
+          </span>
+          <span className="Horinum" id="line-subtext">
+            04
+          </span>
+          <span className="Horinum" id="line-subtext">
+            /05
+          </span>
+        </div>
       </div>
       <div className={styles.container}>
         <div className={styles.pricingshow}>
