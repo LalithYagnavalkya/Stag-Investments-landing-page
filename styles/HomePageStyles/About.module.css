@@ -68,20 +68,23 @@
     font-size: 18px;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   .main {
-    padding: 0 0rem;
+    padding: 0 1rem;
   }
   .row {
     flex-direction: column;
+  }
+  .bigtext {
+    font-size: 29px;
   }
   .slidetext {
     font-size: 11vw;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 376px) {
   .main {
-    padding: 0 1rem;
+    /* padding: 0 1rem; */
   }
   .slidetext {
     font-size: 10vw;

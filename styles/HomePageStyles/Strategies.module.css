@@ -55,17 +55,6 @@
   .main {
     padding: 0 1rem;
   }
-}
-@media (max-width: 425px) {
-  .phone {
-    display: inline;
-    height: 550px;
-  }
-  .piedesktop {
-    display: none;
-  }
-}
-@media (max-width: 768px) {
   .heading {
     font-size: 32px;
     display: flex;
@@ -77,11 +66,20 @@
     align-items: center;
   }
 }
-@media (max-width: 425px) {
-  .heading {
-    font-size: 24px;
+@media (max-width: 426px) {
+  .main {
+    padding: 0 1rem;
   }
-  .desc {
-    font-size: 16px;
+  .phone {
+    display: inline;
+    height: 550px;
+  }
+  .piedesktop {
+    display: none;
+  }
+}
+@media (max-width: 376px) {
+  .main {
+    padding: 0 1rem;
   }
 }
