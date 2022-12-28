@@ -95,7 +95,7 @@ const Pricing = ({ togglePricingPage }) => {
           <div className={styles.pricingshowdesc}>
             Choose a plan according to your budget and get onboard in minutes.
             <span>
-              <img src="/icons/arrow-right.svg" alt="" srcset="" />
+              {/* <img src="/icons/arrow-right.svg" alt="" srcset="" /> */}
             </span>
           </div>
           <div className={styles.priceshowlogo}>
