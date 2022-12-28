@@ -189,7 +189,7 @@ const Strategies = () => {
             02
           </span>
           <span className="Horinum" id="stra-line-subtext">
-            /04
+            /05
           </span>
         </div>
       </div>
@@ -217,7 +217,7 @@ const Strategies = () => {
           </div>
           <chart />
           <div className={styles.phone}>
-            <Pie data={data} options={options} width={400} height={400} />
+            <Pie data={data} options={options} width={350} height={350} />
           </div>
         </div>
       </div>

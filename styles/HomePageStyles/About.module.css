@@ -79,6 +79,7 @@
     font-size: 29px;
   }
   .slidetext {
+    display: none;
     font-size: 11vw;
   }
 }

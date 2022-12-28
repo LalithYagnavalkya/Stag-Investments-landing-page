@@ -64,6 +64,7 @@
   }
   .container {
     align-items: center;
+    /* width: 100%; */
   }
 }
 @media (max-width: 426px) {
@@ -73,6 +74,16 @@
   .phone {
     display: inline;
     height: 550px;
+  }
+  .heading {
+    font-size: 24px;
+  }
+  .left {
+    /* background-color: blue */
+    width: 100%;
+  }
+  .desc {
+    font-size: 16px;
   }
   .piedesktop {
     display: none;
