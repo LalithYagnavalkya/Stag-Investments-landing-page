@@ -74,6 +74,7 @@ a {
   color: #a0a0a0;
 }
 .sebi {
+  display: none;
   color: red;
   position: fixed;
   bottom: 1rem;
