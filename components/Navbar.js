@@ -37,24 +37,24 @@ const Navbar = ({ togglePricingPage }) => {
                   About
                 </span>
               </Link>
-              <Link
-                className="contact-btn"
-                href="#pricingpagesection"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={500}
-                scroll={false}
-              >
-                <span
-                  onClick={() => {
-                    // togglePricingPage(true);
-                    toggleNav(false);
-                  }}
-                >
-                  pricing
-                </span>
-              </Link>
+//               <Link
+//                 className="contact-btn"
+//                 href="#pricingpagesection"
+//                 spy={true}
+//                 smooth={true}
+//                 offset={-100}
+//                 duration={500}
+//                 scroll={false}
+//               >
+//                 <span
+//                   onClick={() => {
+//                     // togglePricingPage(true);
+//                     toggleNav(false);
+//                   }}
+//                 >
+//                   pricing
+//                 </span>
+//               </Link>
               <Link
                 href="#contact-section"
                 className="contact-btn"
@@ -94,22 +94,22 @@ const Navbar = ({ togglePricingPage }) => {
         >
           <span>Contact us</span>
         </Link>
-        <Link
-          className="contact-btn"
-          href="#pricingpagesection"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={500}
-          scroll={false}
-        >
-          <div
-            className={styles.pricingbtn}
-            onClick={() => togglePricingPage(true)}
-          >
-            <span>Pricing</span>
-          </div>
-        </Link>
+//         <Link
+//           className="contact-btn"
+//           href="#pricingpagesection"
+//           spy={true}
+//           smooth={true}
+//           offset={-100}
+//           duration={500}
+//           scroll={false}
+//         >
+//           <div
+//             className={styles.pricingbtn}
+//             onClick={() => togglePricingPage(true)}
+//           >
+//             <span>Pricing</span>
+//           </div>
+//         </Link>
       </div>
     </div>
   );
