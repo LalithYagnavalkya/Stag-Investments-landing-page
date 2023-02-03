@@ -97,7 +97,7 @@
     display: none;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   .heading {
     font-size: 1.4rem;
     line-height: 2.2rem;
@@ -106,7 +106,7 @@
     height: 158px;
   }
   .main {
-    padding: 0 0rem;
+    padding: 0 0.4rem;
   }
   .btnrow {
     font-size: 1rem;
@@ -118,8 +118,11 @@
   }
 }
 @media (max-width: 375px) {
+  .main {
+    padding: 0 1rem;
+  }
   .heading {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     line-height: 2.2rem;
   }
 }

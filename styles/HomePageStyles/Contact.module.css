@@ -36,7 +36,7 @@
   height: 44px;
   overflow: hidden;
 
-  border-radius: 29px;
+  /* border-radius: 29px; */
   outline: none;
 }
 .feildinput input {
@@ -47,7 +47,7 @@
   font-size: 16px;
   outline: none;
 
-  background: #9bb3c9;
+  /* background: #9bb3c9; */
   /* background-color: inherit; */
   color: var(--main-bg-color);
 
@@ -76,10 +76,10 @@
   font-size: 16px;
   font-family: "poppins";
   padding: 1rem;
-  background: #9bb3c9;
+  /* background: #9bb3c9; */
   color: var(--main-bg-color);
   outline: none;
-  border-radius: 29px;
+  /* border-radius: 29px; */
 }
 .messagefeildinput textarea::placeholder {
   color: var(--main-bg-color);

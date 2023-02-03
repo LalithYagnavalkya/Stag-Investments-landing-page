@@ -3,6 +3,8 @@ import { useEffect, useRef, useState } from "react";
 import { Pie } from "react-chartjs-2";
 import styles from "../../styles/HomePageStyles/Strategies.module.css";
 import gsap from "gsap";
+import Highcharts from "highcharts";
+import HighchartsReact from "highcharts-react-official";
 import { useInView } from "react-intersection-observer";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -13,6 +15,70 @@ const Strategies = () => {
     /* Optional options */
     threshold: 0,
   });
+
+  const optionsHigh = {
+    chart: {
+      type: "pie",
+      backgroundColor: "none",
+
+      options3d: {
+        enabled: true,
+        alpha: 45,
+        beta: 0,
+      },
+    },
+    plotOptions: {
+      pie: {
+        dataLabels: {
+          enabled: true,
+          color: "#fff",
+        },
+      },
+    },
+    title: {
+      text: "",
+    },
+    subtitle: {
+      text: "",
+    },
+    accessibility: {
+      point: {
+        valueSuffix: "%",
+      },
+    },
+    tooltip: {
+      pointFormat: "{series.name}: <b>{point.percentage:.1f}%</b>",
+    },
+    plotOptions: {
+      pie: {
+        allowPointSelect: true,
+        cursor: "pointer",
+        depth: 35,
+        dataLabels: {
+          enabled: true,
+          format: "{point.name}",
+        },
+      },
+    },
+    series: [
+      {
+        type: "pie",
+        name: "Percent",
+
+        data: [
+          ["options", 20],
+          ["penny stocks", 20],
+          {
+            name: "Equity",
+            y: 40,
+            sliced: true,
+            selected: true,
+          },
+          ["commodities", 20],
+        ],
+      },
+    ],
+  };
 
   //for text animatins
   useEffect(() => {
@@ -123,7 +189,7 @@ const Strategies = () => {
             02
           </span>
           <span className="Horinum" id="stra-line-subtext">
-            /03
+            /05
           </span>
         </div>
       </div>
@@ -144,12 +210,14 @@ const Strategies = () => {
         <div className={styles.right}>
           <div className={styles.piedesktop} ref={ref}>
             {inView && (
-              <Pie data={data} options={options} width={550} height={550} />
+              <HighchartsReact highcharts={Highcharts} options={optionsHigh} />
+
+              // <Pie data={data} options={options} width={550} height={550} />
             )}
           </div>
-
+          <chart />
           <div className={styles.phone}>
-            <Pie data={data} options={options} width={400} height={400} />
+            <Pie data={data} options={options} width={350} height={350} />
           </div>
         </div>
       </div>

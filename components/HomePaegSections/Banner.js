@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import styles from "../../styles/HomePageStyles/Banner.module.css";
 // import { ReactComponent as RightArrow } from "../../assests/arrow-right.svg";
@@ -29,11 +30,21 @@ const Banner = ({ headlines, togglePricingPage }) => {
       <div className={styles.btnrow} id="lookatprice">
         <span>
           Look at our pricing
-          <img
-            src="/icons/arrow-right.svg"
-            alt="stag investments pricing"
-            onClick={() => togglePricingPage(true)}
-          />
+          <Link
+            className="contact-btn"
+            href="#pricingpagesection"
+            scroll={false}
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            <img
+              src="/icons/arrow-right.svg"
+              alt="stag investments pricing"
+              onClick={() => togglePricingPage(true)}
+            />
+          </Link>
         </span>
         {/* <RightArrow /> */}
       </div>

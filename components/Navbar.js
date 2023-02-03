@@ -37,6 +37,7 @@ const Navbar = ({ togglePricingPage }) => {
                   About
                 </span>
               </Link>
+<<<<<<< HEAD
 
               {/* <span
                 onClick={() => {
@@ -46,6 +47,26 @@ const Navbar = ({ togglePricingPage }) => {
               >
                 pricing
               </span> */}
+=======
+//               <Link
+//                 className="contact-btn"
+//                 href="#pricingpagesection"
+//                 spy={true}
+//                 smooth={true}
+//                 offset={-100}
+//                 duration={500}
+//                 scroll={false}
+//               >
+//                 <span
+//                   onClick={() => {
+//                     // togglePricingPage(true);
+//                     toggleNav(false);
+//                   }}
+//                 >
+//                   pricing
+//                 </span>
+//               </Link>
+>>>>>>> 6aa6b92f93490b9872dba786fd6def344b3e005c
               <Link
                 href="#contact-section"
                 className="contact-btn"
@@ -85,12 +106,31 @@ const Navbar = ({ togglePricingPage }) => {
         >
           <span>Contact us</span>
         </Link>
+<<<<<<< HEAD
         {/* <div
           className={styles.pricingbtn}
           onClick={() => togglePricingPage(true)}
         >
           <span>Pricing</span>
         </div> */}
+=======
+//         <Link
+//           className="contact-btn"
+//           href="#pricingpagesection"
+//           spy={true}
+//           smooth={true}
+//           offset={-100}
+//           duration={500}
+//           scroll={false}
+//         >
+//           <div
+//             className={styles.pricingbtn}
+//             onClick={() => togglePricingPage(true)}
+//           >
+//             <span>Pricing</span>
+//           </div>
+//         </Link>
+>>>>>>> 6aa6b92f93490b9872dba786fd6def344b3e005c
       </div>
     </div>
   );

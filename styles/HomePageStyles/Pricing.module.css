@@ -152,10 +152,10 @@
 }
 .priceshowlogo {
   position: absolute;
-  bottom: -15%;
+  bottom: -1%;
 }
 .priceshowlogo img {
-  height: 430px;
+  height: 360px;
 }
 @media (max-width: 1024px) {
   .main {

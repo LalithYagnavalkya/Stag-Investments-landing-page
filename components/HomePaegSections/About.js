@@ -81,7 +81,7 @@ const About = () => {
             01
           </span>
           <span className="Horinum" id="line-subtext">
-            /03
+            /05
           </span>
         </div>
       </div>
@@ -112,10 +112,10 @@ const About = () => {
             <div>making investing easy </div>
           </div>
           <div className={styles.sentence} id="sentence">
-            <div>for both existing</div>
+            <div>for both existing and</div>
           </div>
           <div className={styles.sentence} id="sentence">
-            <div>and new investors/ traders,</div>
+            <div> new investors/ traders,</div>
           </div>
         </div>
         <div className={styles.smalltext}>

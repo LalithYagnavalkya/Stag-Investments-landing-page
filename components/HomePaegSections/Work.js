@@ -71,10 +71,10 @@ const Work = () => {
           </span>
           <span className="Horinum" id="work-line-subtext">
             {/* 0{pageNo} */}
-            02
+            03
           </span>
           <span className="Horinum" id="work-line-subtext">
-            /03
+            /05
           </span>
         </div>
       </div>

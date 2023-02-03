@@ -48,8 +48,6 @@ const Contact = ({ notify }) => {
       document.getElementById("message").value = "";
     }
   }, [state]);
-  console.log(process.env.NEXT_PUBLIC_FORM);
-  console.log(`https://formspree.io/f/${process.env.NEXT_PUBLIC_FORM}`);
   return (
     <div className={styles.main} id="contact-section">
       <div className="HoriContainer">
@@ -60,10 +58,10 @@ const Contact = ({ notify }) => {
           </span>
           <span className="Horinum" id="contact-line-subtext">
             {/* 0{pageNo} */}
-            04
+            05
           </span>
           <span className="Horinum" id="contact-line-subtext">
-            /04
+            /05
           </span>
         </div>
       </div>

@@ -55,17 +55,6 @@
   .main {
     padding: 0 1rem;
   }
-}
-@media (max-width: 425px) {
-  .phone {
-    display: inline;
-    height: 550px;
-  }
-  .piedesktop {
-    display: none;
-  }
-}
-@media (max-width: 768px) {
   .heading {
     font-size: 32px;
     display: flex;
@@ -75,13 +64,33 @@
   }
   .container {
     align-items: center;
+    /* width: 100%; */
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 426px) {
+  .main {
+    padding: 0 1rem;
+  }
+  .phone {
+    display: inline;
+    height: 550px;
+  }
   .heading {
     font-size: 24px;
   }
+  .left {
+    /* background-color: blue */
+    width: 100%;
+  }
   .desc {
     font-size: 16px;
+  }
+  .piedesktop {
+    display: none;
+  }
+}
+@media (max-width: 376px) {
+  .main {
+    padding: 0 1rem;
   }
 }
