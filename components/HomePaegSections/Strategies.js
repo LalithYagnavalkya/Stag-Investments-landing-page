@@ -189,7 +189,7 @@ const Strategies = () => {
             02
           </span>
           <span className="Horinum" id="stra-line-subtext">
-            /05
+            /04
           </span>
         </div>
       </div>

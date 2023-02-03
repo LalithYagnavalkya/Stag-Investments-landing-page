@@ -74,7 +74,7 @@ const Work = () => {
             03
           </span>
           <span className="Horinum" id="work-line-subtext">
-            /05
+            /04
           </span>
         </div>
       </div>

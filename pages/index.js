@@ -110,7 +110,7 @@ export default function Home() {
       <Risk />
       <Work />
       <Location />
-      <Pricing togglePricingPage={togglePricingPage} />
+      {/* <Pricing togglePricingPage={togglePricingPage} /> */}
       <Contact notify={notify} />
       <Sebi />
       <ToastContainer position="bottom-right" theme="colored" />

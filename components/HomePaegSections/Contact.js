@@ -58,10 +58,10 @@ const Contact = ({ notify }) => {
           </span>
           <span className="Horinum" id="contact-line-subtext">
             {/* 0{pageNo} */}
-            05
+            04
           </span>
           <span className="Horinum" id="contact-line-subtext">
-            /05
+            /04
           </span>
         </div>
       </div>
