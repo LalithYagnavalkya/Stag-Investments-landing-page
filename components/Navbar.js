@@ -38,14 +38,14 @@ const Navbar = ({ togglePricingPage }) => {
                 </span>
               </Link>
 
-              <span
+              {/* <span
                 onClick={() => {
                   togglePricingPage(true);
                   toggleNav(false);
                 }}
               >
                 pricing
-              </span>
+              </span> */}
               <Link
                 href="#contact-section"
                 className="contact-btn"
@@ -85,12 +85,12 @@ const Navbar = ({ togglePricingPage }) => {
         >
           <span>Contact us</span>
         </Link>
-        <div
+        {/* <div
           className={styles.pricingbtn}
           onClick={() => togglePricingPage(true)}
         >
           <span>Pricing</span>
-        </div>
+        </div> */}
       </div>
     </div>
   );
