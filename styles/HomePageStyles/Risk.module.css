@@ -74,9 +74,10 @@
   line-height: 171%;
   color: #757575;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
   .main {
     padding: 0 2rem;
+    padding-bottom: 1rem;
   }
   .videocontainer {
     display: none;

@@ -4,6 +4,7 @@ import styles from "../styles/Navbar.module.css";
 
 const Navbar = ({ togglePricingPage }) => {
   const [isNav, toggleNav] = useState(false);
+  const domain = "https://stag-admin.vercel.app/register";
 
   return (
     <div className={styles.navbar} id="header">
@@ -38,14 +39,9 @@ const Navbar = ({ togglePricingPage }) => {
                 </span>
               </Link>
 
-              {/* <span
-                onClick={() => {
-                  togglePricingPage(true);
-                  toggleNav(false);
-                }}
-              >
-                pricing
-              </span> */}
+              <Link style={{ textAlign: "center" }} href={`${domain}`}>
+                Register
+              </Link>
               <Link
                 href="#contact-section"
                 className="contact-btn"
@@ -85,12 +81,9 @@ const Navbar = ({ togglePricingPage }) => {
         >
           <span>Contact us</span>
         </Link>
-        {/* <div
-          className={styles.pricingbtn}
-          onClick={() => togglePricingPage(true)}
-        >
-          <span>Pricing</span>
-        </div> */}
+        <Link className={styles.pricingbtn} href={`${domain}`}>
+          <span>Register</span>
+        </Link>
       </div>
     </div>
   );

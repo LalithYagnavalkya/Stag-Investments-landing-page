@@ -29,7 +29,7 @@ const Banner = ({ headlines, togglePricingPage }) => {
 
       <div className={styles.btnrow} id="lookatprice">
         <span>
-          Look at our pricing
+          Register with us
           <Link
             className="contact-btn"
             href="#pricingpagesection"

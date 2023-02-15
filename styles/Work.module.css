@@ -58,7 +58,8 @@
   color: #a9a9a9;
   text-shadow: 4px 4px 4px #000000;
 }
-@media (max-width: 1024px) {
+
+@media (max-width: 1440px) {
   .main {
     padding: 0 2rem;
   }
@@ -70,6 +71,15 @@
   .price {
     text-align: center;
   }
+  .sentence {
+    overflow: hidden;
+    margin-bottom: 8px;
+    height: 56px;
+    position: relative;
+  }
+  /* .sentence div {
+    font-size: 2px;
+  } */
 }
 @media (max-width: 768px) {
   .main {

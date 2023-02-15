@@ -89,7 +89,7 @@ const Work = () => {
           <div className={styles.sentence} id="work-sentence">
             <div> to gain constant Profits!</div>
           </div>
-          <div className={styles.price}>199₹/ day</div>
+          {/* <div className={styles.price}>199₹/ day</div> */}
         </div>
         <div className={styles.desc}>
           We trade Monday - Friday at café Avail and everyone is welcomed to
