@@ -1,6 +1,4 @@
-This is my first freelance project.
-
-
+Developed a landing page for 
 
 ## Stag Investments
 
